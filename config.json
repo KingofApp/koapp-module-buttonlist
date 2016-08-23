@@ -10,7 +10,7 @@
     "en-US": ""
   },
   "images" : {
-    "list" : "modules/buttonlist/images/buttonlist_banner.png",
+    "list" : "modules/buttonlist/images/buttonlist_list.png",
     "screenshots" : [
       "modules/buttonlist/images/screenshot01.png"
     ],
