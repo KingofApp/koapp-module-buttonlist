@@ -9,6 +9,16 @@
     "es-ES": "",
     "en-US": ""
   },
+  "images" : {
+    "list" : "modules/buttonlist/images/buttonlist_banner.png",
+    "screenshots" : [
+      "modules/buttonlist/images/buttonlist_screenshot01.png",
+      "modules/buttonlist/images/buttonlist_screenshot02.png"
+    ],
+    "popover" : "modules/buttonlist/images/popover.png",
+    "banner" : "modules/buttonlist/images/buttonlist_banner.png",
+    "logo" : "modules/buttonlist/images/boxmenu_icon.png"
+  },
   "descriptionShort": {
     "es-ES": "Muestra una lista de botones",
     "en-US": "Show a button list"
