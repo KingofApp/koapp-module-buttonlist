@@ -12,12 +12,11 @@
   "images" : {
     "list" : "modules/buttonlist/images/buttonlist_banner.png",
     "screenshots" : [
-      "modules/buttonlist/images/buttonlist_screenshot01.png",
-      "modules/buttonlist/images/buttonlist_screenshot02.png"
+      "modules/buttonlist/images/screenshot01.png"
     ],
-    "popover" : "modules/buttonlist/images/popover.png",
-    "banner" : "modules/buttonlist/images/buttonlist_banner.png",
-    "logo" : "modules/buttonlist/images/boxmenu_icon.png"
+    "popover" : "modules/buttonlist/images/buttonlist_popover.png",
+    "banner" : "modules/buttonlist/images/buttonlist_list.png",
+    "logo" : "modules/buttonlist/images/buttonlist_icon.png"
   },
   "descriptionShort": {
     "es-ES": "Muestra una lista de botones",
