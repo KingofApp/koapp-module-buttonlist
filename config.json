@@ -57,7 +57,7 @@
           "type": "select",
           "key": "path",
           "templateOptions": {
-            "label": "Path1",
+            "label": "Path",
             "required": true
           }
         }, {
