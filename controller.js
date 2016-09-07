@@ -17,7 +17,7 @@
 
         list.push({
           name: value.name,
-          url: value.path
+          url: '#' + value.path
         });
       }
     });
