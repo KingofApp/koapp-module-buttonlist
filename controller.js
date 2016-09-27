@@ -8,19 +8,16 @@
     structureService.registerModule($location, $scope, 'buttonlist');
     var list = [];
 
-    $scope.click = function(item){
-      var index = _.findIndex($scope.buttonlist.modulescope.newsections, {'url': item.url});
-      $location.path(item.url);
-    };
-
     angular.forEach($scope.buttonlist.modulescope.menuItems, function(value, key) {
       if (structureService.get().modules[value.path]) {
-        if( typeof($rootScope.currentIndex) === 'undefined' && $location.path() === value.path)
+
+        if( (typeof($rootScope.currentIndex) === 'undefined') || ($location.path() === value.path)){
           $rootScope.currentIndex = key;
+        }
 
         list.push({
           name: value.name,
-          url: value.path
+          url: '#' + value.path
         });
       }
     });

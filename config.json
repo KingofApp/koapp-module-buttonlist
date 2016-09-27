@@ -9,16 +9,25 @@
     "es-ES": "",
     "en-US": ""
   },
+  "images" : {
+    "list" : "modules/buttonlist/images/buttonlist_list.png",
+    "screenshots" : [
+      "modules/buttonlist/images/screenshot01.png"
+    ],
+    "popover" : "modules/buttonlist/images/buttonlist_popover.png",
+    "banner" : "modules/buttonlist/images/buttonlist_list.png",
+    "logo" : "modules/buttonlist/images/buttonlist_icon.png"
+  },
   "descriptionShort": {
     "es-ES": "Muestra una lista de botones",
     "en-US": "Show a button list"
   },
-  "icon" : "code",
+  "icon" : "tab",
   "type" : "A",
-  "version" : "1.0",
+  "version" : "1.0.0",
   "author" : "King of App",
   "category" : [
-      "others"
+      "menu"
   ],
   "price" : 0,
   "canContain": true,
@@ -48,7 +57,7 @@
           "type": "select",
           "key": "path",
           "templateOptions": {
-            "label": "Path1",
+            "label": "Path",
             "required": true
           }
         }, {
