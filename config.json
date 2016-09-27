@@ -22,12 +22,12 @@
     "es-ES": "Muestra una lista de botones",
     "en-US": "Show a button list"
   },
-  "icon" : "code",
+  "icon" : "tab",
   "type" : "A",
   "version" : "1.0",
   "author" : "King of App",
   "category" : [
-      "others"
+      "menu"
   ],
   "price" : 0,
   "canContain": true,
