@@ -1,7 +1,7 @@
 <div class="module buttonlist" ng-controller="ButtonListController">
   <koa-tabs selected="{{buttonlist.modulescope.selected}}" scrollable>
 
-      <koa-tab ng-class="($index === currentIndex) ? 'iron-selected' : '' " ng-repeat="item in buttonlist.modulescope.newsections" link aria-selected="{{$item === currentIndex}}">
+      <koa-tab ng-class="($index === currentIndex) ? 'selected' : '' " ng-repeat="item in buttonlist.modulescope.newsections" link aria-selected="{{$item === currentIndex}}">
         <a  href="{{item.url}}" tabindex="{{($index === currentIndex) ? 0 : -1 }}">
           {{item.name}}
         </a>
