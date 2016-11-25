@@ -6,8 +6,8 @@
     "en-US": "Show a button list."
   },
   "documentation": {
-    "es-ES": "",
-    "en-US": ""
+    "es-ES": "modules/buttonlist/documentation/es_ES.md",
+    "en-US": "modules/buttonlist/documentation/en_US.md"
   },
   "images" : {
     "list" : "modules/buttonlist/images/buttonlist_list.png",
