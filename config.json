@@ -6,8 +6,8 @@
     "en-US": "Show a button list."
   },
   "documentation": {
-    "es-ES": "",
-    "en-US": ""
+    "es-ES": "modules/buttonlist/documentation/es_ES.md",
+    "en-US": "modules/buttonlist/documentation/en_US.md"
   },
   "images" : {
     "list" : "modules/buttonlist/images/buttonlist_list.png",
@@ -24,7 +24,7 @@
   },
   "icon" : "tab",
   "type" : "A",
-  "version" : "1.0.0",
+  "version" : "1.0.1",
   "author" : "King of App",
   "category" : [
       "menu"

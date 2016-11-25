@@ -7,11 +7,12 @@
     //Register upper level modules
     structureService.registerModule($location, $scope, 'buttonlist');
     var list = [];
+    $rootScope.currentIndex = -1;
 
     angular.forEach($scope.buttonlist.modulescope.menuItems, function(value, key) {
       if (structureService.get().modules[value.path]) {
 
-        if( (typeof($rootScope.currentIndex) === 'undefined') || ($location.path() === value.path)){
+        if( $location.path() === value.path ){
           $rootScope.currentIndex = key;
         }
 
