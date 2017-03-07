@@ -2,8 +2,8 @@
   "name" : "Button List",
   "identifier" : "buttonlist",
   "description": {
-    "es-ES": "Muestra una lista de botones.",
-    "en-US": "Show a button list."
+    "es-ES": "Accede a tu contenido rápidamente y con facilidad utilizando este menú estático de botones.",
+    "en-US": "Access your content quickly and easily using this static button menu."
   },
   "documentation": {
     "es-ES": "modules/buttonlist/documentation/es_ES.md",
@@ -19,8 +19,8 @@
     "logo" : "modules/buttonlist/images/buttonlist_icon.png"
   },
   "descriptionShort": {
-    "es-ES": "Muestra una lista de botones",
-    "en-US": "Show a button list"
+    "es-ES": "Accede a tu contenido rápidamente y con facilidad utilizando este menú estático de botónes.",
+    "en-US": "Access your content quickly and easily using this static button menu."
   },
   "icon" : "tab",
   "type" : "A",
