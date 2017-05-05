@@ -1,8 +1,8 @@
 {
 	"name":"koapp-module-buttonlist",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Buttonlist menu",
-	"author": "King of App",
+	"author": "Koapp <koappnpmpublisher@gmail.com> (http://www.kingofapp.com)",
 	"license": "MIT",
 	"keywords": [
     "koapp",
