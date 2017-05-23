@@ -1,79 +1,81 @@
 {
-  "name" : "Button List",
-  "identifier" : "buttonlist",
-  "description": {
-    "es-ES": "Accede a tu contenido rápidamente y con facilidad utilizando este menú estático de botones.",
-    "en-US": "Access your content quickly and easily using this static button menu."
-  },
-  "documentation": {
-    "es-ES": "modules/buttonlist/documentation/es_ES.md",
-    "en-US": "modules/buttonlist/documentation/en_US.md"
-  },
-  "images" : {
-    "list" : "modules/buttonlist/images/buttonlist_list.png",
-    "screenshots" : [
-      "modules/buttonlist/images/screenshot01.png"
+    "name": "Button List",
+    "identifier": "buttonlist",
+    "description": {
+        "es-ES": "Accede a tu contenido rápidamente y con facilidad utilizando este menú estático de botones.",
+        "en-US": "Access your content quickly and easily using this static button menu."
+    },
+    "documentation": {
+        "es-ES": "modules/buttonlist/documentation/es_ES.md",
+        "en-US": "modules/buttonlist/documentation/en_US.md"
+    },
+    "images": {
+        "list": "modules/buttonlist/images/buttonlist_list.png",
+        "screenshots": [
+            "modules/buttonlist/images/screenshot01.png"
+        ],
+        "popover": "modules/buttonlist/images/buttonlist_popover.png",
+        "banner": "modules/buttonlist/images/buttonlist_list.png",
+        "logo": "modules/buttonlist/images/buttonlist_icon.png"
+    },
+    "descriptionShort": {
+        "es-ES": "Accede a tu contenido rápidamente y con facilidad utilizando este menú estático de botónes.",
+        "en-US": "Access your content quickly and easily using this static button menu."
+    },
+    "icon": "tab",
+    "type": "A",
+    "version": "1.0.5",
+    "author": "King of App",
+    "category": [
+        "menu"
     ],
-    "popover" : "modules/buttonlist/images/buttonlist_popover.png",
-    "banner" : "modules/buttonlist/images/buttonlist_list.png",
-    "logo" : "modules/buttonlist/images/buttonlist_icon.png"
-  },
-  "descriptionShort": {
-    "es-ES": "Accede a tu contenido rápidamente y con facilidad utilizando este menú estático de botónes.",
-    "en-US": "Access your content quickly and easily using this static button menu."
-  },
-  "icon" : "tab",
-  "type" : "A",
-  "version" : "1.0.4",
-  "author" : "King of App",
-  "category" : [
-      "menu"
-  ],
-  "price" : 0,
-  "canContain": true,
-  "subscription": false,
-  "platforms" : [
-      "android",
-      "ios",
-      "windows"
-  ],
-  "view" : "modules/buttonlist/index.html",
-  "files" : [
-      "modules/buttonlist/controller.js",
-      "modules/buttonlist/styles.html"
-  ],
-  "scope" : {
-      "menuItems": [
-      ]
-  },
-  "config" : [
-    {
-      "type": "repeatSection",
-      "key": "menuItems",
-      "templateOptions": {
-        "label": "Items",
-        "btnText": "Add another button to the list",
-        "fields": [{
-          "type": "select",
-          "key": "path",
-          "templateOptions": {
-            "label": "Path",
-            "required": true
-          }
-        }, {
-          "type": "input",
-          "key": "name",
-          "templateOptions": {
-            "label": "Button text",
-            "required": true
-          }
-        }]
-      }
+    "price": 0,
+    "canContain": true,
+    "subscription": false,
+    "platforms": [
+        "android",
+        "ios",
+        "windows"
+    ],
+    "view": "modules/buttonlist/index.html",
+    "files": [
+        "modules/buttonlist/controller.js",
+        "modules/buttonlist/styles.html"
+    ],
+    "scope": {
+        "menuItems": []
+    },
+    "config": [
+        {
+            "type": "repeatSection",
+            "key": "menuItems",
+            "templateOptions": {
+                "label": "Items",
+                "btnText": "Add another button to the list",
+                "fields": [
+                    {
+                        "type": "select",
+                        "key": "path",
+                        "templateOptions": {
+                            "label": "Path",
+                            "required": true
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "key": "name",
+                        "templateOptions": {
+                            "label": "Button text",
+                            "required": true
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "showOn": {
+        "menu": true,
+        "market": true,
+        "dragDrop": true
     }
-  ],
-  "showOn" : {
-      "menu" : true,
-      "market" : true,
-      "dragDrop" : true
-  }
 }
