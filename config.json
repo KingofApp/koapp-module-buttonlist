@@ -45,7 +45,8 @@
     "scope": {
         "menuItems": [],
         "showicon": true,
-        "showname": true
+        "showname": true,
+        "usemodulename": true
     },
     "config": [
         {
@@ -86,10 +87,19 @@
             "type": "checkbox",
             "key": "showname",
             "templateOptions": {
-              "description": "Enable to show the module name, if disabled will show the custom text",
+              "description": "Enable to show button text",
+              "label": "Show text"
+            }
+        },
+        {
+            "type": "checkbox",
+            "key": "usemodulename",
+            "templateOptions": {
+              "description": "Enable to use the selected module name instead of custom text",
               "label": "Use module name"
             }
         }
+
     ],
     "showOn": {
         "menu": true,
