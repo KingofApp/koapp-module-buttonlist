@@ -1,26 +1,37 @@
-  angular
-    .controller('ButtonListController', loadFunction);
+angular
+.controller('ButtonListController', loadFunction);
 
-  loadFunction.$inject = ['$scope', 'structureService', 'storageService', '$location', '$rootScope'];
+loadFunction.$inject = ['$scope', 'structureService', 'storageService', '$location', '$rootScope'];
 
-  function loadFunction($scope, structureService, storageService, $location, $rootScope) {
-    //Register upper level modules
-    structureService.registerModule($location, $scope, 'buttonlist');
-    var list = [];
-    $rootScope.currentIndex = -1;
+function loadFunction($scope, structureService, storageService, $location, $rootScope) {
+//Register upper level modules
+structureService.registerModule($location, $scope, 'buttonlist');
 
-    angular.forEach($scope.buttonlist.modulescope.menuItems, function(value, key) {
-      if (structureService.get().modules[value.path]) {
+$scope.buttonlist.modulescope.newsections = [];
+$rootScope.currentIndex = -1;
 
-        if( $location.path() === value.path ){
-          $rootScope.currentIndex = key;
-        }
+ function getMenu() {
+  var menu = [];
+  //var trExp = /[\/\s]+/gi;
 
-        list.push({
-          name: value.name,
-          url: '#' + value.path
-        });
-      }
+  angular.forEach($scope.buttonlist.modulescope.menuItems, function (value, key) {
+      
+    let use_module_name = $scope.buttonlist.modulescope.usemodulename;
+
+    if( $location.path() === value.path ){
+      $rootScope.currentIndex = key;
+    }
+    structureService.getModule(value.path).then(function (module) {
+      menu.push({
+        name: use_module_name? module.name : value.name,
+        icon: module.icon,
+        url: "#" + value.path
+      });
+
     });
-    $scope.buttonlist.modulescope.newsections = list;
-  }
+  });
+  return menu;
+}
+
+$scope.buttonlist.modulescope.newsections = getMenu();   
+}

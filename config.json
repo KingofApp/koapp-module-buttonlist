@@ -24,7 +24,7 @@
     },
     "icon": "tab",
     "type": "A",
-    "version": "1.0.6",
+    "version": "1.0.8",
     "author": "King of App",
     "category": [
         "menu"
@@ -43,7 +43,9 @@
         "modules/buttonlist/styles.html"
     ],
     "scope": {
-        "menuItems": []
+        "menuItems": [],
+        "showicon": true,
+        "showname": true
     },
     "config": [
         {
@@ -70,6 +72,22 @@
                         }
                     }
                 ]
+            }
+        },
+        {
+            "type": "checkbox",
+            "key": "showicon",
+            "templateOptions": {
+              "description": "Enable to show the icons",
+              "label": "Show icons"
+            }
+        },
+        {
+            "type": "checkbox",
+            "key": "showname",
+            "templateOptions": {
+              "description": "Enable to show the module name, if disabled will show the custom text",
+              "label": "Use module name"
             }
         }
     ],
