@@ -69,7 +69,7 @@
                         "key": "name",
                         "templateOptions": {
                             "label": "Button text",
-                            "required": true
+                            "required": false
                         }
                     }
                 ]
